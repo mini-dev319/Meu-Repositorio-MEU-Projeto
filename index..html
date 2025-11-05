@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fomulário de candidatura de emprego.</title>
+  <link rel="stylesheet" href=".css">
+</head>
+<body>
+  <header>
+  <h1>Fomulário de Candidatura de Emprego</h1>
+  <h2>(Responda a Tudo)</h2>
+  </header>
+  <main>
+    <div class="container">
+    <form>
+    <fieldset class="basico">
+      <legend>Básico Necessário</legend>
+      <label for="nome">Nome Completo</label>
+      <p></p>
+      <input type="text" id="name" placeholder="Ex.Jonhy Thompson Santos" required>
+      <p></p>
+      <label for="email">E-mail</label>
+      <p></p>
+      <input type="text" id="email" placeholder="Ex.*****@gmail.com" required>
+    </fieldset>
+      <p></p>
+      <fieldset>
+        <legend>Período de Trabalho</legend>
+      <input type="radio" id="remoto" name="tempo" required>
+      <label for="remoto">Home Office (Das 8H00-17H00)
+        <p></p>
+      <input type="radio" id="meio-periodo" name="tempo">
+      <label for="meio-periodo">Meio-Período (Das 13H00-15H00)
+        <p></p>
+      <input type="radio" id="integral" name="tempo">
+      <label for="integral">integral (Das 8H00-16H00)
+    </fieldset>
+    <p></p>
+    <fieldset>
+      <legend>Opções de Carreira</legend>
+      <select id="carreira" name="carreira">
+      <option value="" disabled selected>Selecione</option>
+      <option value="desenvolvedor">Desenvolvedor</option>
+      <option value="desingner">Desingner</option>
+      <option value="tecnico">Técnico</option>
+      <option value="gerente">Gerente</option>
+      <option value="suporte">Suporte (Marketing)</option>
+      </select>
+    </fieldset>
+            <button type="submit">Submit</button>
+    </form>
+    </div>
+  </main>
+</body>
+</html>
